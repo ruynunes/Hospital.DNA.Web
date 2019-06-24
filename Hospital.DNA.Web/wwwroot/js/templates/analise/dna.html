@@ -1,0 +1,21 @@
+﻿<div class="col-md-4">
+    <div id="num-analise" class="row">
+        <div class="form-group">
+            <input type="number" class="form-control" placeholder="Número de análises" ng-model="numeroAnalises" ng-change="CompletarFormulario()">
+        </div>
+    </div>
+    <div id="dna-form" class="row">
+    </div>
+    <div class="row">
+        <button class="btn btn-primary" ng-click="RodarAnalise()">Analisar</button>
+    </div>
+    <br />
+    <div class="row">
+        <div class="form-group">
+            <label>Resultado da análise</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">{{resultadoAnalise.join('\n')}}
+                
+            </textarea>
+        </div>
+    </div>
+</div>
